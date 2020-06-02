@@ -61,7 +61,7 @@ export const convertCollectionsSnapshotToMap = (collectionsSnapshot) => {
     const { title, items } = docSnapshot.data();
 
     return {
-      reouteName: encodeURI(title.toLowerCase()),
+      routeName: encodeURI(title.toLowerCase()),
       id: docSnapshot.id,
       title,
       items,
