@@ -44,6 +44,12 @@ const Header = ({ currentUser, hidden }) => (
   </div>
 );
 
+// we can use direct access to the reducer state
+// const mapStateToProps = (state) => ({
+//   currentUser: state.user.currentUser,
+// });
+
+// or use a selector which will check if object has truly changed before re rendedring
 const mapStateToProps = createStructuredSelector({
   currentUser: selectCurrentUser,
   hidden: selectCartHidden,
